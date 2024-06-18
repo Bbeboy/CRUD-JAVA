@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="824.0" type="Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controller.TablaUsuarioController">
+   <children>
+      <TableView fx:id="tblUsuario" layoutX="64.0" layoutY="146.0" prefHeight="302.0" prefWidth="696.0">
+        <columns>
+          <TableColumn fx:id="clmNombre" prefWidth="182.0" text="Nombre" />
+          <TableColumn fx:id="clmApellido" minWidth="0.0" prefWidth="166.0" text="Apellido" />
+            <TableColumn fx:id="clmCorreo" prefWidth="179.0" text="Correo" />
+            <TableColumn fx:id="clmOperaciones" prefWidth="168.0" text="Operaciones" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fx:id="iconNuevoUsuario" fill="#9550c6" glyphName="USER_PLUS" layoutX="116.0" layoutY="103.0" onMouseClicked="#accionNuevoUsuario" size="40" />
+      <FontAwesomeIconView fx:id="iconAbrirUsuario" fill="#27a496" glyphName="FOLDER_OPEN" layoutX="174.0" layoutY="103.0" onMouseClicked="#accionAbrirUsuario" size="40" />
+      <FontAwesomeIconView fx:id="iconGuardarUsuario" fill="#3a7cc7" glyphName="SAVE" layoutX="389.0" layoutY="103.0" onMouseClicked="#accionGuardarUsuario" size="40" />
+   </children>
+</fx:root>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="btnPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="1104.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controller.InicioController">
+   <left>
+      <ToolBar orientation="VERTICAL" prefHeight="400.0" prefWidth="204.0" style="-fx-background-color: #022448;" BorderPane.alignment="CENTER">
+        <items>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/portada.png" />
+               </image>
+            </ImageView>
+          <Button fx:id="btnArchivo" mnemonicParsing="false" onAction="#abrirArchivo" prefHeight="30.0" prefWidth="198.0" styleClass="alert-success" text="Archivos" />
+            <Button fx:id="btnRacionales" mnemonicParsing="false" onAction="#abrirRacionales" prefHeight="32.0" prefWidth="198.0" text="Racionales" />
+            <Button fx:id="btnUsuarios" mnemonicParsing="false" onAction="#accionAbrirUsuarios" prefHeight="34.0" prefWidth="198.0" text="Usuarios" />
+            <Button fx:id="btnJuego" mnemonicParsing="false" onAction="#accionAbrirJuego" prefHeight="24.0" prefWidth="197.0" text="Juego" />
+        </items>
+      </ToolBar>
+   </left>
+   <center>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../imagen/portada.png" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
